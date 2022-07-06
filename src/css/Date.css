@@ -1,0 +1,23 @@
+.date-container {
+    display: flex;
+    align-items: center;
+}
+
+.date-label {
+    min-width: 7vw;
+    display: block;
+}
+
+@media only screen and (max-width: 840px) {
+    .date-container {
+        flex-direction: column;
+        align-items: initial;
+    }
+    
+    .date-label {
+        display: block;
+        font-size: 1rem;
+        padding: 1vh 0 1vh 0;
+        color: #373d40;
+    }
+}

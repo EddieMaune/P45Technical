@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+}
+
+.radio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-label {
+    min-width: 7vw;
+    font-size: 0.7rem;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-icon {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 100%;
+}
+
+@media only screen and (max-width: 840px) {
+    .container {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .radio-label {
+        min-width: 7vw;
+        font-size: 1rem;
+        padding: 1vh 0 1vh 0;
+        color: #373d40;
+    }
+
+    .radio-container {
+        width: 26vw;
+    }
+
+    .radio {
+        padding: 1vh 1vw 1vh 1vw;
+    }
+    
+}
+@media only screen and (max-width: 300px) {
+    .radio-container {
+        width: 66vw;
+    }
+}
